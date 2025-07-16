@@ -13,7 +13,7 @@ const UserSelector = ({ users = [], setSelectedUserId }) => {
         }}
       >
         <option value="">Select a User</option>
-        {users.slice(0, 10).map((user) => (
+        {users.map((user) => (
           <option key={user._id} value={user._id}>
             {user.name}
           </option>
