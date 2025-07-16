@@ -26,6 +26,8 @@ A full-stack MERN project to manage users, award random points, and display a re
 
 ---
 
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -34,9 +36,10 @@ A full-stack MERN project to manage users, award random points, and display a re
 - MongoDB instance (local or MongoDB Atlas)
 - (Optional) `dotenv` setup for environment variables
 
-### Installation
+## Screenshots
+<img width="1436" height="901" alt="Screenshot 2025-07-16 133537" src="https://github.com/user-attachments/assets/3ddb9a65-b81c-4492-81c3-89bad13bdba0" />
+<img width="1019" height="818" alt="Screenshot 2025-07-16 133457" src="https://github.com/user-attachments/assets/e2b24f7f-b218-4d3b-8b0a-d267b9f7538d" />
 
-1. Clone the repository
 
 ```bash
 git clone https://github.com/student-nitish/RewardPointApp.git
