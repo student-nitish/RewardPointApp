@@ -7,9 +7,13 @@ import { Toaster } from "react-hot-toast";
 import bgImage from "./assets/chess.webp"
 function App() {
   return (
-    <div className="min-h-screen bg-center bg-cover    p-4" style={{
-        backgroundImage:`url(${bgImage})`,
-      }} >
+    <div
+  className="min-h-screen bg-center bg-cover bg-fixed sm:bg-scroll p-4 sm:p-6 md:p-8"
+  style={{
+    backgroundImage: `url(${bgImage})`,
+  }}
+>
+
       <Routes >
       <Route path="/" element={<Home />} />
       <Route path="/history" element={<HistoryComp />} />

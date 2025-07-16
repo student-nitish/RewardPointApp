@@ -67,11 +67,16 @@ const HistoryPreview = () => {
                                 key={item._id}
                                 className="flex text-sm border-b border-gray-200 pb-1"
                             >
-                                <div className="w-1/3">{item.user.name}</div>
-                                <div className="w-1/3">{item.pointsAdded}</div>
-                                <div className="w-1/3 text-gray-500 text-xs">
-                                    {new Date(item.createdAt).toLocaleString()}
-                                </div>
+                                <div className="w-1/3">{item.user?.name}</div>
+                               <div className="w-1/3">
+                                    {item.user?.name ? item.pointsAdded :' -'}
+                           </div>
+
+                               <div className="w-1/3 text-gray-500 text-xs">
+                   {item.user?.name ? (item.createdAt ? new Date(item.createdAt).toLocaleString() : '-') : ''}
+                         </div>
+
+
                             </li>
                         ))}
                     </ul>
