@@ -6,7 +6,10 @@ const dotenv = require('dotenv');
 app.use(cors());
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",                   // local dev
+    "https://rewardpoint-frontend.vercel.app", // your deployed frontend
+  ],
   credentials: true,
 }));
 const userRouter=require("./Routes/User")
