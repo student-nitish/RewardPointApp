@@ -50,7 +50,7 @@ const AddUser = ({ userAdded }) => {
         type="text"
         placeholder="Enter name"
         {...register("name", { required: "Name is required" })}
-        className="border p-1.5 rounded-md"
+        className="border  p-1.5 rounded-md"
       />
       {errors.name && (
         <span className="text-red-600 text-sm">

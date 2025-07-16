@@ -7,7 +7,7 @@ import AddUser from "../components/AddUser";
 import TOPCards from "../components/TOPCards";
 import LeaderboardList from "../components/LeaderBoardList";
 import { NavLink } from "react-router-dom";
-import bgImage from "../assets/chess.webp"
+
 
 const Home = () => {
   const [users, setUsers] = useState([]);
@@ -32,14 +32,15 @@ const Home = () => {
         Points Battle Arena
       </h1>
 
-      <div className="absolute top-5 right-5 z-20">
-        <NavLink
-          to="/history"
-          className="bg-indigo-700 text-white font-semibold px-5 py-2 rounded-lg shadow hover:bg-indigo-800 transition-all duration-300"
-        >
-          View History
-        </NavLink>
-      </div>
+     <div className="absolute top-1 right-3 sm:top-2 sm:right-5 z-20">
+  <NavLink
+    to="/history"
+    className="bg-indigo-700 text-white font-semibold text-sm sm:text-base px-4 sm:px-5 py-2 rounded-lg shadow hover:bg-indigo-800 transition-all duration-300"
+  >
+    View History
+  </NavLink>
+</div>
+
 
       <div className="flex flex-col items-center gap-6 mb-10 max-w-xl mx-auto px-2 w-full">
         <UserSelector users={users} setSelectedUserId={setSelectedUserId} />
